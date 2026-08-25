@@ -80,9 +80,9 @@ node scripts/validate_animation_plan.mjs docs/scene-plans/S01-animation-plan.jso
 
 `youni-motion.config.json` 定义画布、帧率、场景、字幕文件和人物安全区域。v0.1.0 默认只承诺 1920 × 1080、30 fps、16:9 横屏。
 
-## 当前发布准备状态
+## 当前发布状态
 
-发布包结构、模板、脚本、公开示例、Apache-2.0 许可证和基础契约测试已整理。独立目录中的 `npm ci`、TypeScript 类型检查、真实 Review MP4、ProRes Alpha MOV、透明通道、安全区域和隐私扫描已于 2026-08-25 通过；机器可读结果见 [Step 2 release QA](tests/reports/2026-08-25-step2-release-qa.json)。GitHub 仓库创建与发布尚未开始。
+Youni Motion `v0.1.0` 已在 GitHub 公开发布。发布包结构、模板、脚本、公开示例、Apache-2.0 许可证和基础契约测试均已整理；独立目录中的 `npm ci`、TypeScript 类型检查、真实 Review MP4、ProRes Alpha MOV、透明通道、安全区域和隐私扫描已于 2026-08-25 通过。机器可读结果见 [Step 2 release QA](tests/reports/2026-08-25-step2-release-qa.json)。
 
 ## 许可证
 

@@ -55,9 +55,9 @@ node scripts/validate_scene_catalog.mjs docs/scene-catalog.json
 node scripts/validate_animation_plan.mjs docs/scene-plans/S01-animation-plan.json
 ```
 
-## Release-preparation status
+## Release status
 
-The package structure, starter template, utilities, synthetic example, Apache-2.0 license, and contract tests are assembled. An independent `npm ci`, TypeScript check, real review MP4, ProRes alpha MOV, alpha-channel and safe-area inspection, and privacy scan passed on 2026-08-25. See the machine-readable [Step 2 release QA](tests/reports/2026-08-25-step2-release-qa.json). GitHub repository creation and publishing have not started.
+Youni Motion `v0.1.0` is publicly available on GitHub. The package structure, starter template, utilities, synthetic example, Apache-2.0 license, and contract tests are assembled. An independent `npm ci`, TypeScript check, real review MP4, ProRes alpha MOV, alpha-channel and safe-area inspection, and privacy scan passed on 2026-08-25. See the machine-readable [Step 2 release QA](tests/reports/2026-08-25-step2-release-qa.json).
 
 Original Youni Motion files use Apache-2.0. Remotion has its own special license and some organizations may need a company license. Read [DEPENDENCIES.md](DEPENDENCIES.md) and the [Remotion License](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md). Never commit a Remotion license key.
 
