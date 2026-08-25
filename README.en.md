@@ -1,6 +1,27 @@
-# Youni Motion
+<p align="right">English · <a href="README.md">简体中文</a></p>
 
-Youni Motion is an SRT-led skill for producing motion graphics around talking-head videos. Natural-language requests route to subtitle cleanup, subtitle refinement, scene segmentation, motion planning, scene generation, and rendering.
+<p align="center">
+  <img src="docs/assets/youni-motion-hero.png" alt="Youni Motion turns Chinese talking-head SRT into scene-by-scene Remotion animation" width="100%" />
+</p>
+
+<h1 align="center">Youni Motion</h1>
+
+<p align="center"><strong>Turn Chinese talking-head SRT into scene-by-scene Remotion animation that can be reviewed, revised, and composited with a presenter.</strong></p>
+
+<p align="center">
+  <a href="https://github.com/laobaibaiya-alt/youni-motion/releases/tag/v0.1.0"><img src="https://img.shields.io/github/v/release/laobaibaiya-alt/youni-motion?style=flat-square" alt="Release" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/laobaibaiya-alt/youni-motion?style=flat-square" alt="Apache-2.0 License" /></a>
+  <img src="https://img.shields.io/badge/Agent%20Skill-Codex-2f6f73?style=flat-square" alt="Codex Agent Skill" />
+  <img src="https://img.shields.io/badge/Remotion-4.0.516-5965f2?style=flat-square" alt="Remotion 4.0.516" />
+</p>
+
+Youni Motion is an Agent Skill for Chinese talking-head animation production. It uses SRT as the timing backbone and routes ordinary-language requests through subtitle cleanup, subtitle refinement, scene segmentation, motion planning, scene generation, and rendering. It delivers a full-canvas review MP4 and a presenter-safe alpha MOV for compositing.
+
+## What problem does it solve?
+
+Talking-head motion graphics need more than animated elements: subtitle meaning, object entrances, relationship reveals, presenter placement, and delivery formats must remain consistent. Youni Motion keeps those concerns in one workflow, while scene identifiers and quality evidence remain internal instead of becoming required user input.
+
+![The six-stage Youni Motion workflow from SRT to scene-level video](docs/assets/youni-motion-workflow.png)
 
 ## Principles
 
@@ -9,6 +30,12 @@ Youni Motion is an SRT-led skill for producing motion graphics around talking-he
 - A unique semantic match proceeds directly; a question is asked only for real ambiguity.
 - Middle scenes use the full canvas. Opening, closing, and single-scene projects support both review MP4 and alpha MOV delivery.
 - The default central presenter safe area is `x=690, y=108, width=540, height=760` and is configurable.
+
+## Real output and delivery
+
+The same scene implementation produces two synchronized deliverables. Review MP4 keeps the full background and captions for approval; alpha MOV removes both and reserves the central presenter-safe area for compositing.
+
+![Youni Motion frame progression, review MP4, and alpha MOV delivery](docs/assets/youni-motion-delivery.png)
 
 ## Install the Skill
 

@@ -1,6 +1,27 @@
-# Youni Motion
+<p align="right"><a href="README.en.md">English</a> · 简体中文</p>
 
-Youni Motion 是一套以 SRT 为时间骨架的露脸口播动画 Skill。它通过自然语言完成字幕初剪、字幕精调、场景切分、动画方案、逐场生成和视频渲染。
+<p align="center">
+  <img src="docs/assets/youni-motion-hero.png" alt="Youni Motion：把中文露脸口播 SRT 变成逐场 Remotion 动画" width="100%" />
+</p>
+
+<h1 align="center">Youni Motion</h1>
+
+<p align="center"><strong>把中文露脸口播 SRT，变成可逐场确认、可持续修改、可直接叠加真人的 Remotion 动画。</strong></p>
+
+<p align="center">
+  <a href="https://github.com/laobaibaiya-alt/youni-motion/releases/tag/v0.1.0"><img src="https://img.shields.io/github/v/release/laobaibaiya-alt/youni-motion?style=flat-square" alt="Release" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/laobaibaiya-alt/youni-motion?style=flat-square" alt="Apache-2.0 License" /></a>
+  <img src="https://img.shields.io/badge/Agent%20Skill-Codex-2f6f73?style=flat-square" alt="Codex Agent Skill" />
+  <img src="https://img.shields.io/badge/Remotion-4.0.516-5965f2?style=flat-square" alt="Remotion 4.0.516" />
+</p>
+
+Youni Motion 是一套面向中文露脸口播的 Agent Skill。它以 SRT 为时间骨架，通过普通中文指令完成字幕初剪、字幕精调、场景切分、动画方案、逐场生成和视频渲染，交付完整画面的 Review MP4，以及为真人叠加保留安全区域的 Alpha MOV。
+
+## 它解决什么问题
+
+露脸口播动画不仅要“让元素动起来”，还要让字幕语义、物体出场、关系建立、人物位置和最终交付保持一致。Youni Motion 把这些要求放进同一套生产流程，让创作者可以用“分析当前场”“修改开头”“继续下一段”“渲染最后一场”这样的自然语言持续推进，而不用管理内部场次编号和质量凭据。
+
+![Youni Motion 从 SRT 到逐场视频的六阶段流程](docs/assets/youni-motion-workflow.png)
 
 ## 核心原则
 
@@ -9,6 +30,12 @@ Youni Motion 是一套以 SRT 为时间骨架的露脸口播动画 Skill。它�
 - 唯一匹配直接执行，真实歧义才提问。
 - 中间场使用完整画布；开场、尾场和单场项目同时支持 Review MP4 与透明 MOV。
 - 默认中央人物安全区域为 `x=690, y=108, width=540, height=760`，允许项目配置。
+
+## 真实输出与交付
+
+同一个场景实现会沿同一时间轴生成两种交付：Review MP4 保留完整背景和字幕，用于逐场确认；Alpha MOV 移除背景和字幕，并保留中央人物安全区域，用于后期叠加真人。
+
+![Youni Motion 逐帧过程、Review MP4 与 Alpha MOV 交付对比](docs/assets/youni-motion-delivery.png)
 
 ## 安装 Skill
 
