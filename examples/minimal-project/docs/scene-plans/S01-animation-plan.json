@@ -1,0 +1,20 @@
+{
+  "sceneId": "S01",
+  "semanticGoal": "让观众看到输入语义、动画关系和逐场视频结果的形成顺序",
+  "objects": [
+    {"id": "input", "role": "primary", "label": "字幕语义"},
+    {"id": "relation", "role": "supporting", "label": "动画关系"},
+    {"id": "output", "role": "result", "label": "逐场视频"}
+  ],
+  "sequence": [
+    {"objectId": "input", "action": "enter", "startFrame": 0, "endFrame": 22},
+    {"objectId": "relation", "action": "enter", "startFrame": 14, "endFrame": 38},
+    {"objectId": "input->relation", "action": "connect", "startFrame": 36, "endFrame": 58},
+    {"objectId": "output", "action": "enter", "startFrame": 58, "endFrame": 82}
+  ],
+  "connectors": [
+    {"sourceObjectId": "input", "targetObjectId": "relation", "sourceAnchor": "right", "targetAnchor": "left", "continuous": true}
+  ],
+  "presenterSafeArea": {"x": 690, "y": 108, "width": 540, "height": 760},
+  "delivery": {"review": "mp4", "alpha": "mov-prores-4444"}
+}

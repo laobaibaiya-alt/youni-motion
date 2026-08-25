@@ -1,0 +1,21 @@
+{
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "scene": {
+    "id": "S01",
+    "kind": "opening",
+    "durationInFrames": 180
+  },
+  "presenterSafeArea": {
+    "x": 690,
+    "y": 108,
+    "width": 540,
+    "height": 760
+  },
+  "subtitle": {
+    "source": "source.srt"
+  }
+}

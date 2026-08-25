@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "routing": {
+    "mode": "semantic",
+    "sceneIdsAreInternal": true,
+    "userRequiredControlFields": [],
+    "acceptedSceneReferences": [
+      "current-scene",
+      "first-scene",
+      "next-scene",
+      "previous-scene",
+      "last-scene",
+      "recent-scene",
+      "subtitle-time-range",
+      "subtitle-cue-range",
+      "file-path",
+      "unique-content-description"
+    ]
+  },
+  "resolution": {
+    "uniqueMatch": "execute",
+    "multipleMatches": "ask-one-short-question",
+    "zeroMatches": "report-concrete-blocker",
+    "missingReadableInput": "report-concrete-blocker",
+    "meaningfulUserChoice": "ask-one-short-question"
+  },
+  "intentBoundaries": {
+    "analysis": {
+      "allowsMutation": false
+    },
+    "generation": {
+      "requiresActionIntent": true,
+      "requiresExactPhrase": false
+    }
+  },
+  "quality": {
+    "ownership": "internal",
+    "blocksDeliveryOnFailure": true,
+    "userRequiredProofFields": []
+  },
+  "srtPolicy": {
+    "cutChangesTimecodes": false,
+    "refineChangesTimecodes": false,
+    "refineMayRedistributeTextAcrossExistingCues": true
+  },
+  "workflowCapabilities": [
+    "youniSrtCut",
+    "youniSrtRefine",
+    "youniSceneSplit",
+    "youniMotionPlan",
+    "youniMotionBuild",
+    "youniMotionRender"
+  ],
+  "delivery": {
+    "canvas": [1920, 1080],
+    "fps": 30,
+    "middleSceneFormats": ["mp4"],
+    "edgeSceneFormats": ["mp4", "alpha-mov"],
+    "defaultPresenterSafeArea": {
+      "x": 690,
+      "y": 108,
+      "width": 540,
+      "height": 760
+    }
+  }
+}

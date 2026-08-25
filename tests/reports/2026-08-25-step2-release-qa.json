@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-08-25",
+  "status": "pass",
+  "scope": "independent-project-install-typecheck-render-and-delivery-validation",
+  "packageVersion": "0.1.0",
+  "environment": {
+    "platform": "macOS 14.4.1 arm64",
+    "node": "22.22.0",
+    "npm": "10.9.4",
+    "ffmpeg": "7.1.1",
+    "remotion": "4.0.516"
+  },
+  "checks": {
+    "independentInitialization": "pass",
+    "npmCi": "pass",
+    "npmAuditVulnerabilities": 0,
+    "typescriptNoEmit": "pass",
+    "reviewRender": "pass",
+    "alphaRender": "pass",
+    "deliveryValidator": "pass",
+    "privacyScan": "pass",
+    "manualFrameInspection": "pass"
+  },
+  "artifacts": {
+    "review": {
+      "relativePath": "renders/S01/review.mp4",
+      "bytes": 415479,
+      "sha256": "ba5a133fac3831658f827fa39ea9b6b9b1640011617bf3b8976b8211371b75cb",
+      "codec": "h264",
+      "pixelFormat": "yuvj420p",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "durationSeconds": 6
+    },
+    "alpha": {
+      "relativePath": "renders/S01/alpha.mov",
+      "bytes": 72293927,
+      "sha256": "bcb8e03356ab80185ee40854577dff40c6e8fe511ca9b10199f4d9a2b55cb258",
+      "codec": "prores",
+      "pixelFormat": "yuva444p12le",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "durationSeconds": 6
+    }
+  },
+  "visualEvidence": {
+    "reviewFramesInspected": [30, 90, 150],
+    "fullCanvasCornerPixelsNonBlack": true,
+    "presenterSafeArea": {"x": 690, "y": 108, "width": 540, "height": 760},
+    "alphaSafeAreaFramesChecked": 180,
+    "alphaSafeAreaMaximum": 0,
+    "alphaSafeAreaNonZeroPixels": 0,
+    "alphaOverlayNonEmpty": true
+  },
+  "privacy": {
+    "sourceFilesScanned": 16,
+    "machinePathHits": 0,
+    "privateCaseHits": 0,
+    "secretPatternHits": 0
+  },
+  "notes": [
+    "Remotion emitted a macOS pre-15 compatibility warning; both renders completed successfully.",
+    "Rendered binaries and node_modules are evidence artifacts in the independent QA directory and are not bundled in the public repository."
+  ]
+}

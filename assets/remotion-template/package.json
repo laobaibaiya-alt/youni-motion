@@ -1,0 +1,26 @@
+{
+  "name": "youni-motion-project",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts --no-open",
+    "typecheck": "tsc --noEmit",
+    "render:review": "node scripts/render-scene.mjs review S01",
+    "render:alpha": "node scripts/render-scene.mjs alpha S01",
+    "validate:srt": "node scripts/validate-srt.mjs public/source.srt",
+    "validate:delivery": "node scripts/validate-render-delivery.mjs"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.516",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remotion": "4.0.516"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.516",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "typescript": "7.0.2"
+  }
+}

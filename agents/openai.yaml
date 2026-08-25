@@ -1,0 +1,7 @@
+interface:
+  display_name: "Youni Motion"
+  short_description: "用自然语言完成 SRT 驱动的口播动画生产"
+  default_prompt: "Use $youni-motion to analyze this SRT-led talking-head project and perform the requested stage."
+
+policy:
+  allow_implicit_invocation: true

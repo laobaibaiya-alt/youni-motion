@@ -1,0 +1,14 @@
+{
+  "source": "input/source.srt",
+  "scenes": [
+    {
+      "id": "S01",
+      "kind": "single",
+      "startCue": 1,
+      "endCue": 2,
+      "startMs": 0,
+      "endMs": 6000,
+      "semanticGoal": "说明字幕语义如何转化为逐场动画关系"
+    }
+  ]
+}
